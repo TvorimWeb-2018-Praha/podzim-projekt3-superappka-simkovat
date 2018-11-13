@@ -31,3 +31,42 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-item {
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #25133d;
+}
+.header {
+    background-image: url('images/pozadi.jpg');
+    position: relative;
+}
+.button {
+    border: solid white 2px;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+}
+.container-funkce {
+    display: flex;
+}
+.card-funkce {
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+}
+
+svg {
+    width: 75px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #48418e;
+}
