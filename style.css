@@ -28,45 +28,100 @@ body {
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative; /* pridala Terka*/
 }
 
-/* ----- zde začni psát vlastní CSS ----- */
-.menu {
+/* ------------- MENU ------------ */
+nav {
+    
+}
+.menu ul {
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
 }
-.menu-item {
-    padding: 10px;
+.menu li {
+    padding: 20px 30px;
 }
-a {
+.menu a {
     text-decoration: none;
     color: #25133d;
+    font-size: 18px;
 }
-.header {
+.homepage {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/*-----------HEADER------------*/
+header {
     background-image: url('images/pozadi.jpg');
     position: relative;
+    color: white;
+    padding: 75px 50px;
+}
+h1 {
+    font-size: 5.5em;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1em;
+}
+h2 {
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
 }
 .button {
     border: solid white 2px;
-    border-radius: 5px;
-    padding: 10px;
-    width: auto;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 0 20px 0 0;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.button:hover {
+    background-color: #48418e;
+}
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.ruka {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*-------------FUNKCE--------------*/
 .container-funkce {
     display: flex;
+    padding: 20px;
 }
 .card-funkce {
     width: 30%;
     text-align: center;
     margin: 20px;
 }
-
+h3 {
+    color: #48418e;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+p {
+    font-size: 18px;
+}
 svg {
     width: 75px;
 }
-
-.footer {
+footer {
     text-align: center;
     color: white;
     background-color: #48418e;
+    padding: 10px 0;
 }
